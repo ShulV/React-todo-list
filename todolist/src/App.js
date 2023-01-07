@@ -1,9 +1,12 @@
 import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
-import Header from './components/header/Header'
+
+import Header from './components/header/Header';
 import TodoAddingForm from './components/todoAddingForm/TodoAddingForm';
 import TodoList from './components/todoList/TodoList';
-import React, { useState } from 'react';
+
+import { Container } from 'react-bootstrap';
 
 function App() {
   //тут храним состояние приложения
@@ -26,12 +29,12 @@ function App() {
   ])
 
   return (
-    <div className="App">
+    <Container>
       <Header />
-      <TodoAddingForm />
+      <TodoAddingForm todo={todo} setTodo={setTodo} />
       <TodoList todo={todo} setTodo={setTodo} />
-    </div>
-  );
+    </Container>
+  )
 }
 
 export default App;

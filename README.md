@@ -30,3 +30,12 @@ npm start
             </div>
         )
     }
+
+2) установить генератор уникальных значений
+npm install uuid
+
+3) установить bootstrap
+npm install react-bootstrap bootstrap
+
+4) установить иконки
+npm install react-awesome
