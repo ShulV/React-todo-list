@@ -1,4 +1,6 @@
-# React-todo-list
+# Результат работы программы
+![web app todolist](https://github.com/ShulV/React-todo-list/blob/main/doc_images/web_app1.png)
+
 ## Как создать начальный шаблон приложения?
 1) создать react-приложение
 npx create-react-app todolist
