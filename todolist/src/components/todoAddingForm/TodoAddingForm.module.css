@@ -1,0 +1,9 @@
+.btn_left_margin {
+    margin-left: 20px;
+}
+
+.flex_center {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}

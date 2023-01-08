@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import { Row, Col } from 'react-bootstrap'
+import { Row, Col, Button } from 'react-bootstrap'
 import { v4 } from 'uuid'
+import tafCss from './TodoAddingForm.module.css'
 
 function TodoAddingForm({todo, setTodo}) {
 
@@ -19,8 +20,10 @@ function TodoAddingForm({todo, setTodo}) {
         <Row>
             <Col>
                 <h2>Добавление задачи</h2>
-                <input value={value} onChange={ (e) => {setValue(e.target.value)} }></input>
-                <button onClick={ () => {addTodo()} }>Добавить</button>
+                <div className={tafCss.flex_center}>
+                    <input value={value} onChange={ (e) => {setValue(e.target.value)} }></input>
+                    <Button variant="success" size="sm" className={tafCss.btn_left_margin} onClick={ () => {addTodo()} }>Добавить</Button>
+                </div>
             </Col>
         </Row>
 

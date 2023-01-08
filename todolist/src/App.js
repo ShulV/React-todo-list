@@ -29,7 +29,7 @@ function App() {
   ])
 
   return (
-    <Container>
+    <Container className='app'>
       <Header />
       <TodoAddingForm todo={todo} setTodo={setTodo} />
       <TodoList todo={todo} setTodo={setTodo} />
