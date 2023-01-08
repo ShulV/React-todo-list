@@ -47,7 +47,7 @@ const [editValue, setEditValue] = useState('')
                 <div>
                     {todo.map(target => (
                         <div key={target.id} className={tlCss.todo_row}>
-                            <div><span className={tlCss.subtext}>таск: </span>{target.title}</div>
+                            <div className={!target.status ? tlCss.completed : true}><span className={tlCss.subtext}>таск: </span>{target.title}</div>
                             {
                                 editId == target.id ?
                                 <div className={tlCss.flex_center}>

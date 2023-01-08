@@ -11,7 +11,7 @@ function TodoAddingForm({todo, setTodo}) {
         setTodo([...todo, {
             id: v4(), 
             title: value, 
-            status: false
+            status: true
         }])
         setValue('')
     }
